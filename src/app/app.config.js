@@ -7,11 +7,12 @@
         //Material design modify theme
         $mdThemingProvider
             .theme('default')
-            .primaryPalette('indigo')
-            .accentPalette('blue')
+            .primaryPalette('teal')
+            .accentPalette('red')
             .warnPalette('green')
             .backgroundPalette('grey');
 
+        $mdThemingProvider.alwaysWatchTheme(true);
         //Enable log
         $logProvider.debugEnabled(true);
 

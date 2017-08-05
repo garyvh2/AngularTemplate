@@ -38,7 +38,7 @@ var buildStyles = function() {
     };
     //Files to be injected
     var injectFiles = gulp.src([
-        path.join(conf.paths.src, '/app/modules/**/*.scss'),
+        path.join(conf.paths.src, '/app/**/*.scss'),
         path.join('!' + conf.paths.src, '/app/app.scss')
     ], {
         read: false

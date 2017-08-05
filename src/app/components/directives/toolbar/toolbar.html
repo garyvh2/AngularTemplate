@@ -1,0 +1,41 @@
+<md-content>
+    <md-toolbar class="md-primary">
+        <div class="md-toolbar-tools">
+            <md-button ng-click="vm.toggleLeft()" class="md-icon-button" aria-label="Settings">
+                <i class="fa fa-bars"></i>
+            </md-button>
+
+            <h2 flex md-truncate>Site Title</h2>
+
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <i class="fa fa-2x fa-heart"></i>
+            </md-button>
+
+            <md-menu md-position-mode="target-right target">
+                <md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
+                    <i class="fa fa-2x fa-cog"></i>
+                </md-button>
+                <md-menu-content width="3">
+                    <md-menu-item ng-repeat="item in ['Profile', 'Settings', 'Exit']">
+                        <md-button ng-click="vm.itemClick($index)">
+                            <div layout="row" flex>
+                                <p flex>{{item}}</p>
+                                <i class="fa fa-2x fa-{{vm.icons[$index]}}"></i>
+                            </div>
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </div>
+    </md-toolbar>
+</md-content>
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+    <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Side Navigation</h1>
+    </md-toolbar>
+    <md-content layout-margin>
+        <p>
+            Side Nav
+        </p>
+    </md-content>
+</md-sidenav>

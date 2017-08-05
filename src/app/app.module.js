@@ -14,7 +14,8 @@
                 'cloudinary',               //Epic cloud image administrator
                 'toastr',                   //Nice toast provider
                 'ngMessages',               //Set forms field states, errors ...etc
-                'lfNgMdFileInput'           //Cool file input for angular material https://github.com/shuyu/angular-material-fileinput
+                'lfNgMdFileInput',          //Cool file input for angular material https://github.com/shuyu/angular-material-fileinput
+                'joshtate04.ngSweetAlert2'
             ]
         );
         //'ngRepeatReorder',          //Easy way to make organizable list of items
